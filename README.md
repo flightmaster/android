@@ -1,6 +1,6 @@
 # FlightMaster
 
-If you just want to install a pre-build version, it is available in the Play Store:
+A pre-built version, as of July 2016, is available in the Play Store:
 
 https://play.google.com/store/apps/details?id=com.gpsaviator.android
 
