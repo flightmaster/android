@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:focusable="false">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EditMe"
+            android:minWidth="30mm"
+            android:id="@+id/editName" android:layout_gravity="right"/>
+    <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Suggestions"-->
+            <!--android:layout_toRightOf="@id/editName"-->
+            <!--android:id="@+id/editSuggestionLabel" android:layout_gravity="center_horizontal"/>-->
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSuggestionSpinner"
+            android:layout_alignTop="@id/editName"
+            android:layout_toRightOf="@+id/editName" />
+
+    <!--<Button android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/editNameSpinner"-->
+            <!--android:text="Cancel"-->
+            <!--android:id="@+id/editNameCancel"-->
+            <!--style="@android:style/Theme.Holo.Dialog"-->
+            <!--/>-->
+
+    <!--<Button android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/editNameCancel"-->
+            <!--android:layout_alignTop="@id/editNameCancel"-->
+            <!--android:text="Save"-->
+            <!--style="@android:style/Theme.Holo.Dialog"-->
+            <!--/>-->
+
+</RelativeLayout>

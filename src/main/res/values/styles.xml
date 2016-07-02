@@ -1,0 +1,68 @@
+<resources>
+
+    <integer name="ZoomRoutePadding">-100</integer>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+
+    <style name="map">
+        <!--<item name="android:layout_below">@+id/dataBlock</item>-->
+    </style>
+
+    <style name="menuButton" parent="android:Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="menuItems" parent="android:Widget.Button">
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="menuItems.planButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">4mm</item>
+    </style>
+
+    <style name="dataItems">
+        <item name="android:textSize">40dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="dataItemsBackground">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:bottomLeftRadius">5dp</item>
+        <item name="android:bottomRightRadius">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="dataLabels">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="planListBase">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:foreground">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:bottomLeftRadius">5dp</item>
+        <item name="android:bottomRightRadius">5dp</item>
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:divider">#A0A0A0</item>
+        <item name="android:textSize">@dimen/planFontSize</item>
+    </style>
+
+    <style name="planListBase.planList">
+    </style>
+
+</resources>

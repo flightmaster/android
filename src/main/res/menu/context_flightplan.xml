@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/insertBeforeFirstWaypoint" android:title="Insert before %s..."></item>
+    <item android:id="@+id/insertBeforeSecondWaypoint" android:title="Insert before %s..."></item>
+    <item android:id="@+id/addAfterSecondWaypoint" android:title="Add after %s..."></item>
+    <item android:id="@+id/changeFirstWaypoint" android:title="Change %s..."></item>
+    <item android:id="@+id/changeSecondWaypoint" android:title="Change %s..."></item>
+    <item android:id="@+id/deleteFirstWaypoint" android:title="Delete %s"></item>
+    <item android:id="@+id/deleteSecondWaypoint" android:title="Delete %s"></item>
+
+</menu>

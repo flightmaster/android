@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/planListBase.planList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="12dp" android:paddingBottom="12dp">
+
+    <ToggleButton
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryETAtoggle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            style="android:style/Bubble.TextAppearance.Light"
+            android:textOff="ETA"
+            android:textSize="@dimen/planFontSize"
+            android:textOn="ETA" android:singleLine="false"/>
+
+    <ToggleButton
+            android:id="@+id/summaryTotalSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            style="android:style/Bubble.TextAppearance.Light"
+            android:textOn="&#x03A3;"
+            android:textOff="&#x03A3;"
+            android:checked="false"
+            android:textSize="@dimen/planFontSize"
+            android:layout_toLeftOf="@+id/summaryETAtoggle"
+            android:layout_alignParentRight="true"
+            android:onClick="onSummarySumClick"/>
+    <Button
+            android:id="@+id/reverseRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="android:style/Bubble.TextAppearance.Light"
+            android:textSize="22dp"
+            android:text="&#x21C5;"
+            android:layout_alignTop="@id/summaryTotalSwitch"
+            android:layout_alignBottom="@id/summaryTotalSwitch"
+            android:layout_alignParentLeft="true"
+            android:onClick="onReverseRouteClick"/>
+
+</RelativeLayout>

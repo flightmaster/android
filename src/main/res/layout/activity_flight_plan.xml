@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/bottomRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/newWaypointButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add..." />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/summaryRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/bottomRow"
+        android:layout_centerVertical="true"
+        >
+        
+        <TextView
+        android:text="Total:"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+        
+        <TextView
+	        android:id="@+id/totalTrack"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:textSize="24sp" />
+	    
+	    <TextView
+	        android:id="@+id/totalDistance"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:textSize="24sp" />
+	    
+    </LinearLayout>
+    
+    <!--  fakelayout is an empty row which allows us to use it for alignment
+    purposes for the list -->
+    
+    <LinearLayout
+        android:id="@+id/fakeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/summaryRow"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/planWaypointList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fakeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+</RelativeLayout>

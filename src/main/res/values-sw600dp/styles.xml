@@ -1,0 +1,49 @@
+<resources>
+
+    <integer name="ZoomRoutePadding">60</integer>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+
+    <style name="map"></style>
+
+    <style name="menuButton" parent="android:Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="menuItems" parent="android:Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="menuItems.planButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">6mm</item>
+    </style>
+
+    <style name="dataItems">
+        <item name="android:textSize">40dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="dataItemsBackground">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:bottomLeftRadius">5dp</item>
+        <item name="android:bottomRightRadius">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="dataLabels">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

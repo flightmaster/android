@@ -1,0 +1,87 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:23'
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.gpsaviator.android"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "0.6"
+        multiDexEnabled true
+    }
+    signingConfigs {
+         debug {
+              storeFile file(debugKeyStore)
+              //storePassword debugKeyStorePassword
+              //keyPassword debugKeyPassword
+              keyAlias debugKeyAlias
+         }
+         release {
+              storeFile file(releaseKeyStore)
+              storePassword releaseKeyStorePassword
+              keyPassword releaseKeyPassword
+              keyAlias releaseKeyAlias
+         }
+     }
+    buildTypes {
+        debug {
+            //Causes issues so disabled for now
+
+            //minifyEnabled true
+            //runProguard true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [ mapApiKey: debugMapApiKey ]
+            signingConfig signingConfigs.debug
+        }
+        release {
+            manifestPlaceholders = [ mapApiKey: releaseMapApiKey ]
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+        full { }
+    }
+    dexOptions {
+        incremental true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    dependencies {
+        //apt 'org.projectlombok:lombok:1.16.2'
+        provided 'org.projectlombok:lombok:1.16.2'
+    }
+    lintOptions {
+         checkReleaseBuilds false
+         //abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'compile-libs')
+    //    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4+'
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
+}

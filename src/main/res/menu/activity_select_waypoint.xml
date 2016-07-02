@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sortByName" android:title="Sort by name"></item>
+    <item android:id="@+id/sortByIdent" android:title="Sort by ident"></item>
+    <item android:id="@+id/exportSD" android:title="Export to SD"></item>
+    <item android:id="@+id/importSD" android:title="Import from SD"></item>
+</menu>

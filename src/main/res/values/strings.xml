@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">FlightMaster</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">FlightMaster</string>
+    <string name="edit_message">Hello World!</string>
+    <string name="button_send">Send!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="speed">Kts</string>
+    <string name="altitude">Feet</string>
+    <string name="knots">Knots</string>
+    <string name="track">&#176;Mag</string>
+    <string name="feet">Feet</string>
+    <string name="title_activity_edit_waypoint">Edit waypoint</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="title_activity_db">Select a waypoint</string>
+    <string name="title_activity_flight_plan">Flight Plan</string>
+    <string name="minReadoutWidth">12mm</string>
+    <string name="undoWipe">Undo Wipe</string>
+    <string name="wipe">Wipe Route</string>
+    <string name="mapMode">Map Mode</string>
+    <string name="zoom">Zoom Route</string>
+    <string name="dashes">---</string>
+
+    <string name="freeMode">Free Pan</string>
+    <string name="trackMode">Track</string>
+    <string name="trackUpMode">Track Up</string>
+    <string name="disclaimer"><![CDATA[<html>
+        <b>Warnings:</b><ul>
+        <li>The airspace and waypoint database contained within this software is out of date.</li>
+        <li>This is alpha-quality software and so there may be bugs; use at your <b>own risk</b>.</li>
+        <li>You must not use this software as your primary navigation source.</li>
+        <li>The Google Maps base map is not stored on your device. The base map is cached depending on when
+        and where you have browsed the map, and FlightMaster cannot control the contents of this cache. You
+        are strongly advised to review your route just prior to flight to \'refresh\' the cache for your area.</li>
+        </ul>
+        <p>If you do not agree to accept all associated risks then you <b>must not use this software.</b></p>
+        </html>]]>
+    </string>
+    <string name="i_agree">I Agree</string>
+    <string name="blankTime">-:--</string>
+
+    <dimen name="planFontSize">22dp</dimen>
+    <dimen name="planWidth">170dp</dimen>
+
+</resources>
