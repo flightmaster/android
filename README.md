@@ -1,5 +1,9 @@
 # FlightMaster
 
+If you just want to install a pre-build version, it is available in the Play Store:
+
+https://play.google.com/store/apps/details?id=com.gpsaviator.android
+
 ## Setup
 
 You will need a Google Maps API key to build and run FlightMaster.
@@ -40,6 +44,9 @@ Problems:
 
 - The architecture was an attempt to keep the code portable, a decision I now
   regret.
+
+- The packaging naming structure needs changing from com.gpsaviator.* (I used to own the domain,
+  but let it go).
 
 - The serialisation of databases has too much boilerplate code. I tried default
   serialisation but it was very slow. There must be a better way, eliminating
