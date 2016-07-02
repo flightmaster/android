@@ -47,7 +47,7 @@ Problems:
 
 - Testing (unit and UI) needs coverage, that said it is a prototype.
 
-- Dependency Injection hasn't been used anywhere
+- Dependency Injection hasn't been used anywhere; Dagger is probably a good candidate
 
 - Lombok has been used, I'd prefer something like Immutables to get the effect
 
